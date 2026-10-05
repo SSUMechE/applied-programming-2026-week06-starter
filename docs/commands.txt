@@ -1,0 +1,55 @@
+Week6 ReadingV10 commands
+Run in Anaconda Prompt from your own repository root except the first clone group.
+Replace only the path, URL and student ID placeholders. Run one group at a time.
+Create the environment once. Reuse its activation afterward. Before/after TODO timing follows Reading headings.
+
+[1]
+cd /d "C:\your-course-folder"
+git clone YOUR-PRIVATE-HTTPS-CLONE-URL
+cd applied-programming-w06-YOUR-STUDENT-ID
+git remote -v
+
+[2]
+set PYTHONUTF8=1
+conda --no-plugins env create --solver classic --file environment.yml
+
+[3]
+conda activate applied-programming-w06
+python -m pip install -r requirements.txt
+python -m pip install -e . --no-build-isolation
+python scripts/verify_environment.py
+
+[4]
+python examples/inspect_clearance.py
+
+[5]
+python examples/inspect_routes.py
+
+[6]
+python -m ap_week06
+
+[7]
+python examples/compare_grids.py
+
+[8]
+python scripts/render_selection.py
+
+[9]
+python -m pytest tests/public tests/test_student.py -q
+
+[10]
+python -m pytest tests/public tests/test_student.py -q
+python -m ap_week06
+python examples/compare_grids.py
+python scripts/verify_submission.py
+
+[11]
+git status --short
+git diff
+git add src/ap_week06/selection.py
+git diff --staged
+git commit -m "Complete Week 6 route improvement"
+git push origin main
+git status --short
+git rev-parse HEAD
+git ls-remote origin refs/heads/main

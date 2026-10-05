@@ -1,0 +1,60 @@
+{
+  "schema_version": 1,
+  "protected": {
+    ".gitattributes": "3131783d82f971e1a661deab7c0888410a6cdf225968b5a0989816e70a1878c6",
+    ".gitignore": "98a314a4db044b6bd28fe55cfd469bad454ac31f6f497bde12f7b535babfe610",
+    "docs/commands.txt": "3e6c54c1d2dbc4c75c6670a8abc2840f9be1db642262383388e8ea97c77d8d3a",
+    "docs/week_06_reading.pdf": "71c5d852931a296f84af0ac373bcf1eb4fab3b4ef8232b07aad372c3f63fab0c",
+    "environment.yml": "742fec1b3d1d1ec40a688232e2e1a31114e0856a12547980a63124ee4545fe6c",
+    "examples/compare_grids.py": "d3a4eae01f69acba13cdc930b27c526a88de26de92830d3ebef623129585ada1",
+    "examples/inspect_candidates.py": "50b1d8dda00e9173106f6dd1b3444e8c952bc0f1f28cf5974fb323a34ea3cf6e",
+    "examples/inspect_clearance.py": "8964822c7ecf4bf7ff7a4617c0ae30545d72938833c8a2ec9baf57bac279d7c3",
+    "examples/inspect_grid.py": "ce99ea395d92a5c4a8bed9ed8c2d74cbc02c3d5f1114facdbe6e46235c66d2cf",
+    "examples/inspect_interface.py": "f9347039744af5637f8bc92699d0412f883b361b8ac350a9bc95b45c70110458",
+    "examples/inspect_routes.py": "cf7477095e0e487d8e851fba7c5273b2d131cb355c50b99f9f001daed72cda89",
+    "examples/practice_selection.py": "01d7bddca7a6e9143b24c5421be663e1cbf59dbbd454d6b065cd06fdaa8450b1",
+    "PROVENANCE.md": "e68d41b56d57761c72155dceac233cc2ac5affd9a2b3a0c4c496a5358ae9d536",
+    "pyproject.toml": "3068a6bc62ea39e9a24553d7812142a9ed0854459d70bb3cd6daf6ec5fdf0641",
+    "README.md": "56014baecb611951866372c4498934b1ae419a535b28688ac4c78477cbfedca9",
+    "requirements.txt": "c0b5aabed24e1211150fe33ffe0fc44c0e6aba74c68775bf66c5d774ad748e01",
+    "scripts/render_selection.py": "03aa5c9aac90cb74a4059e6ef135dcff1c9f01d6322e5a9c07530c4311a057d2",
+    "scripts/verify_environment.py": "e2f93cbda80c710d6ed62a2b1223532599037f4a66bb555bfd62e2a789ab2131",
+    "scripts/verify_submission.py": "2f78ab348ffbd7a9a078241adeabf7f9f4e92f2da967d3ffc1544989b62feb27",
+    "src/ap_week06/__init__.py": "d0cc8a26106ad52f2c9b23713e822ca9a0db821866c6b2c339a3a48ec7678459",
+    "src/ap_week06/__main__.py": "847437f56a51f8f59352d280589188abc21dc6df9c56f421115023f3f7eb3ca1",
+    "src/ap_week06/adapter.py": "11a820c1c60936ced56a86f0924db4d78c9219bc9cbcb7bf901f59700fe4a8e8",
+    "src/ap_week06/backend.py": "febdf41c40bd87bbce35275ac2ba7b6a512aadbf0aee527f4335d9e44c8fbe35",
+    "src/ap_week06/candidates.py": "a71714d4d4ca84ad3eb2ee9876bd53771579e016418b02bc000dfe6164662f4d",
+    "src/ap_week06/cases.py": "dde72100387d60ff53dbe01b6462b02d5dc04b0c627765a2b42a247fd2ae7280",
+    "src/ap_week06/domain.py": "86a8b58261b358b808ecbd27ff4c510a1dd271083b99f3bc5c004e1c7f32eeb6",
+    "src/ap_week06/evaluator.py": "202d52a9ba65bd8bc61738b5f8db45cbb23360e2db20ee46849e09dae29048da",
+    "src/ap_week06/fakes.py": "b7699b15af336d0b4ac5005b5a99772afc6c4591eb3a72e20f85c05b0f71a1ed",
+    "src/ap_week06/geometry.py": "70b92447501085c2884f22ce67aa4e7a34e87563db2b468945f545d798f5271b",
+    "src/ap_week06/model.py": "9fc8b35e7a4b7302367344acd7ff7d9b0138f564ef2c61be9511311acdaa3fe0",
+    "src/ap_week06/provided.py": "2570142598c7649e00cd345afe4e9d61c839fbfc19007f2b1175c6101910f983",
+    "src/ap_week06/results.py": "b97e3ddcd8b45b8061f6500c7b528820aad36fd29729f902c9e7261c37748453",
+    "src/ap_week06/routes.py": "b5ae22b752207716fff4db20fc9806e8323e45fa5b46f628d2bff70af7bccc7f",
+    "src/ap_week06/support.py": "c49df7850b7887bb507d5ede9caf5eea58759ae335896bc0ee45633d3c167382",
+    "src/ap_week06/teaching.py": "de87e2e954c517d2b1b3bfded0923d01f6bbdd1f60a868570261de96f81e7966",
+    "src/ap_week06/workflow.py": "27e9fefb7430445a3b8518fc9d7af52f7ba9799d3248eb901345f1bbebdce468",
+    "tests/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "tests/public/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "tests/public/test_candidates.py": "53e4571011b0d1021851281aff7807cd817fab92a77fac23ab4d83eba01e2fb0",
+    "tests/public/test_grid.py": "f8ae50458eaa82cd1a2ff28faee40ef730377c2f408fce8cbbe7b2a01ad62bd8",
+    "tests/public/test_routes.py": "4f716cb5d2991c18580515908a0836d89d4e4c0be37e8e0582eb04cabea0be04",
+    "tests/public/test_selection.py": "dc92beaeb459cda464f9cf04055e8dc7c5e5fb89ad8cf561d51b67c76cc83db5",
+    "tests/public/test_shortening.py": "899a20ff6d922b70833a11affe50f4739cf689d706674bf3fa15479ecfee9902",
+    "tests/test_student.py": "76532e8e9cb47750ea4a1c9e33c2c04566b27d5d0ff81f519680bb9e4bc12c40"
+  },
+  "editable": {
+    "src/ap_week06/selection.py": {
+      "allowed_bodies": [
+        "generate_route_grid",
+        "shorten_route",
+        "select_shortest"
+      ],
+      "structure_sha256": "f7c482907a43258eaae085f2ff2623adb5c03f940c3370651b401716513e67c1"
+    }
+  },
+  "provided_tests": "tests/test_student.py"
+}

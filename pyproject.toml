@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools==80.9.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ap-week06"
+version = "0.1.0"
+description = "Week 6 tested height-grid generation and path selection"
+requires-python = ">=3.12,<3.13"
+dependencies = ["numpy==2.4.6"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+include = ["ap_week06*"]
+namespaces = false
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "--strict-markers"
