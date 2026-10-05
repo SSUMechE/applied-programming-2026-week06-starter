@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "protected": {
-    ".gitattributes": "3131783d82f971e1a661deab7c0888410a6cdf225968b5a0989816e70a1878c6",
+    ".gitattributes": "e98247a060450a4112c1279ae890791368d452f4287a8bb610b873e926516004",
     ".gitignore": "98a314a4db044b6bd28fe55cfd469bad454ac31f6f497bde12f7b535babfe610",
     "docs/commands.txt": "3e6c54c1d2dbc4c75c6670a8abc2840f9be1db642262383388e8ea97c77d8d3a",
     "docs/week_06_reading.pdf": "71c5d852931a296f84af0ac373bcf1eb4fab3b4ef8232b07aad372c3f63fab0c",

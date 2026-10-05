@@ -1,2 +1,7 @@
 * text=auto eol=lf
 *.pdf binary
+
+# Preserve supplied byte hashes for these original CRLF files.
+docs/commands.txt -text
+src/ap_week06/__init__.py -text
+src/ap_week06/candidates.py -text
