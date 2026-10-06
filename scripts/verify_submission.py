@@ -5,6 +5,7 @@ pushed commit, LMS submission, every possible program input.
 """
 import ast
 import hashlib
+import importlib
 import json
 from pathlib import Path
 import subprocess
@@ -27,6 +28,29 @@ def structure(path, allowed):
 
 
 def main():
+    expected = ROOT / "src" / "ap_week06" / "__init__.py"
+    try:
+        package = importlib.import_module("ap_week06")
+        loaded_file = getattr(package, "__file__", None)
+        loaded = Path(loaded_file).resolve() if loaded_file else None
+        checkout_problem = loaded != expected.resolve()
+        import_error = None
+    except Exception as error:
+        loaded = None
+        checkout_problem = True
+        import_error = error
+    if checkout_problem:
+        print("LOCAL CHECK FAIL: ap_week06 is not loaded from this repository.")
+        print(f"Loaded: {loaded}")
+        print(f"Expected: {expected}")
+        if import_error is not None:
+            print(f"Import error: {import_error}")
+        print("In Anaconda Prompt, activate applied-programming-w06, then run:")
+        print(f'cd /d "{ROOT}"')
+        print("python -m pip install -e . --no-build-isolation")
+        print("python scripts/verify_environment.py")
+        print("python scripts/verify_submission.py")
+        return 1
     manifest = json.loads((ROOT / "protected_manifest.json").read_text(encoding="utf-8"))
     problems = []
     for name, expected in manifest["protected"].items():

@@ -1,4 +1,4 @@
-Week6 ReadingV10 commands
+Week6 ReadingV11 commands
 Run in Anaconda Prompt from your own repository root except the first clone group.
 Replace only the path, URL and student ID placeholders. Run one group at a time.
 Create the environment once. Reuse its activation afterward. Before/after TODO timing follows Reading headings.

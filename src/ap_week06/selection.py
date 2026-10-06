@@ -19,7 +19,8 @@ def shorten_route(path, edge_checker):
     # TODO 2: work on a new list. Preserve endpoints and input Path.
     # On each pass, consider deleting exactly one internal point.
     # Check its replacement edge with edge_checker(left, right).
-    # Choose the greatest length saving strictly above 1e-12, leftmost on exact tie.
+    # Choose the greatest saving strictly above 1e-12.
+    # On an exact tie, keep the earliest point in the current path's sequence.
     # Delete that one point and restart. If no permitted improvement remains, stop.
     # Return a NEW Path. Propagate checker exceptions rather than inventing False.
     raise NotImplementedError("Complete this marked body")

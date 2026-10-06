@@ -1,6 +1,6 @@
 # Week 6: Building Testable Design Programs
 
-Read [Reading V10](docs/week_06_reading.pdf), including its final Assignment.
+Read [Reading V11](docs/week_06_reading.pdf), including its final Assignment.
 Use [this template](https://github.com/SSUMechE/applied-programming-2026-week06-starter/generate) to create your own private Week 6 repository. The final Assignment is in the Reading.
 Use [commands.txt](docs/commands.txt) to copy commands one group at a time.
 
@@ -22,6 +22,17 @@ geometry, final-path checking, tests, saved output, replay and drawing are also
 supplied. tests/test_student.py contains three complete basic examples.
 Run these tests as provided. You do not need to write tests or change their file.
 The Reading's Assignment gives the full algorithm requirements.
+
+Use these files to follow the current task:
+
+- `src/ap_week06/selection.py`: your three function bodies and the supplied evaluation function.
+- `src/ap_week06/routes.py`: the two-obstacle model, geometric checks and preparation of shortened routes.
+- `src/ap_week06/workflow.py`: connects generation results, shortening, evaluation, selection and saved output.
+- `examples/inspect_clearance.py` and `examples/inspect_routes.py`: complete examples that run before your TODOs.
+- `src/ap_week06/model.py`, `provided.py` and `cases.py`: retained Week 5 calculations and inputs used by comparisons or supplied tests.
+
+Other examples and the optional `fakes.py` and `teaching.py` helpers are supplied
+for reference. They are not additional Assignment work.
 
 ## 2. Prepare repository and environment
 
@@ -84,7 +95,9 @@ shorten_route(path,edge_checker) obtains a new list with
 validate_shortening_inputs. For each internal point, use segment_length to
 compute the saving from removing it. Check the replacement segment with
 checked_edge(edge_checker,left,right). Choose the permitted removal with the
-greatest saving strictly above 1e-12 m. Keep the leftmost on an exact saving tie.
+greatest saving strictly above 1e-12 m. On an exact tie, keep the earliest
+point in the current path's sequence, from start toward goal. This is sequence
+order, not the smallest x-coordinate.
 Remove that one point and restart. Stop when no permitted improvement remains.
 Return a new Path while preserving the endpoints and the input path.
 The raw length can exceed the limit. Check the final route after shortening.

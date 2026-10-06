@@ -1,4 +1,7 @@
-"""The one shared input used in Reading, practice and the Assignment demo."""
+"""Retained Week 5 single-obstacle input for comparison examples and supplied tests.
+
+The Week 6 Assignment uses the two-obstacle RouteProblem in routes.py.
+"""
 from .domain import Configuration, ConfigurationBounds, Path, Obstacle
 
 
